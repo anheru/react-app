@@ -1,0 +1,14 @@
+.comic-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.comic-item__image {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.comic-item__title {
+  font-size: 14px;
+}
