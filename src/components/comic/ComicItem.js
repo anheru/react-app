@@ -3,22 +3,24 @@ import PropTypes from 'prop-types'
 
 import './ComicItem.css'
 
-const ComicItem = ({comic}) => {
+const ComicItem = ({ id, thumbnail, title }) => {
   return(
     <div className="comic-item">
       <img
         className="comic-item__image"
-        src={comic.thumbnail}
-        title={comic.title}
-        alt={comic.alt}
+        src={thumbnail}
+        title={title}
+        alt={title}
       />
-      <p className="comic-item__title">{comic.title}</p>
+      <p className="comic-item__title">{title}</p>
     </div>
   )
 }
 
 ComicItem.propTypes = {
-  comic: PropTypes.object.isRequired
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.string.isRequired,
 }
 
 export default ComicItem
