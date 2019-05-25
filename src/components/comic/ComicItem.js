@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import './ComicItem.css'
 
 const ComicItem = ({comic}) => {
@@ -13,6 +15,10 @@ const ComicItem = ({comic}) => {
       <p className="comic-item__title">{comic.title}</p>
     </div>
   )
+}
+
+ComicItem.propTypes = {
+  comic: PropTypes.object.isRequired
 }
 
 export default ComicItem
