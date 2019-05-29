@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { Link } from 'react-router-dom'
 import './ComicItem.css'
 
 const ComicItem = ({ id, thumbnail, title }) => {
   return(
-    <div className="comic-item">
+    <Link to={`/comics/${id}`} className="comic-item">
       <img
         className="comic-item__image"
         src={thumbnail}
@@ -13,7 +13,7 @@ const ComicItem = ({ id, thumbnail, title }) => {
         alt={title}
       />
       <p className="comic-item__title">{title}</p>
-    </div>
+    </Link>
   )
 }
 

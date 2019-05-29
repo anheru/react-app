@@ -1,6 +1,15 @@
 .comic-item {
   padding-left: 10px;
   padding-right: 10px;
+  display: block;
+}
+
+.comic-item {
+  text-decoration: none;
+}
+
+.comic-item:hover {
+  text-decoration: underline
 }
 
 .comic-item__image {

@@ -16,6 +16,19 @@ ul {
   pointer-events: none;
 }
 
+.App-header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.App-header li {
+  padding: 0 2rem;
+}
+
 .App-content {
   background-color: #282c34;
   min-height: calc(100vh - 51px);
@@ -29,7 +42,7 @@ ul {
   padding-bottom: 30px;
 }
 
-.App-container {
+.container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;

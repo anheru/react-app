@@ -5,6 +5,8 @@ import Header from './Header'
 import Index from '../pages/index'
 import About from '../pages/about'
 import Users from '../pages/users'
+import Comics from '../pages/comics'
+import Comic from '../pages/comic'
 
 class App extends Component {
   render () {
@@ -13,11 +15,15 @@ class App extends Component {
         <div className="App">
           <Header/>
 
-          <Switch>
-            <Route path="/" exact component={Index}/>
-            <Route path="/about" exact component={About}/>
-            <Route path="/users" exact component={Users}/>
-          </Switch>
+          <div className="App-content">
+            <Switch>
+              <Route path="/" exact component={Index}/>
+              <Route path="/comics" exact component={Comics}/>
+              <Route path="/comics/:id" component={Comic}/>
+              <Route path="/about" component={About}/>
+              <Route path="/users" component={Users}/>
+            </Switch>
+          </div>
         </div>
       </Router>
     );
