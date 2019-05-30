@@ -4,7 +4,7 @@ class Comic extends Component {
   render () {
     return (
       <>
-        <p>ID: {this.props.match.params.id}</p>
+        <h2>ID: {this.props.match.params.id}</h2>
       </>
     )
   }

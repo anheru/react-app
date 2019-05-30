@@ -1,23 +1,23 @@
-.comic-item {
+.comic {
   padding-left: 10px;
   padding-right: 10px;
   display: block;
 }
 
-.comic-item {
+.comic {
   text-decoration: none;
 }
 
-.comic-item:hover {
+.comic:hover {
   text-decoration: underline
 }
 
-.comic-item__image {
+.comic__image {
   width: 100%;
   height: auto;
   position: relative;
 }
 
-.comic-item__title {
+.comic__title {
   font-size: 14px;
 }

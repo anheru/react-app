@@ -1,25 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './ComicList.css'
 import styled from 'styled-components'
 
-// const ComicItem = React.lazy(() => import('./ComicItem'))
-import ComicItem from './ComicItem'
+import Comic from './Comic'
+
+const List = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+`
 
 const ListItem = styled.li`
   width: 20%;
   margin-top: 2rem;
 `
 
-const ComicList = ({comics}) => {
-  return(
-    <ul className="comic-list container">
+const ComicList = ({ comics }) => {
+  return (
+    <List>
       {comics.map((c) => (
         <ListItem key={c.id}>
-          <ComicItem {...c}/>
+          <Comic {...c} />
         </ListItem>
       ))}
-    </ul>
+    </List>
   )
 }
 

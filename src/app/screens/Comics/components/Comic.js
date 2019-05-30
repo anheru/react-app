@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import './ComicItem.css'
+import './Comic.css'
 
 const ComicItem = ({ id, thumbnail, title }) => {
-  return(
-    <Link to={`/comics/${id}`} className="comic-item">
+  return (
+    <Link to={`/comics/${id}`} className="comic">
       <img
-        className="comic-item__image"
+        className="comic__image"
         src={thumbnail}
         title={title}
         alt={title}
       />
-      <p className="comic-item__title">{title}</p>
+      <p className="comic__title">{title}</p>
     </Link>
   )
 }
