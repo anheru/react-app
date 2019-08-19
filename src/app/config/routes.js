@@ -7,7 +7,7 @@ import Comic from '../screens/Comic'
 
 const Container = styled.main`
   background-color: #282c34;
-  min-height: calc(100vh - 48px);
+  min-height: calc(100vh - 54px);
   display: flex;
   flex-direction: column;
   align-items: center;
