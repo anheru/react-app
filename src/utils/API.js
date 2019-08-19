@@ -9,4 +9,4 @@ export default axios.create({
     apikey: process.env.REACT_APP_MARVEL_PUBLIC_KEY,
     hash: md5(1 + process.env.REACT_APP_MARVEL_PRIVATE_KEY + process.env.REACT_APP_MARVEL_PUBLIC_KEY)
   }
-});
+})
