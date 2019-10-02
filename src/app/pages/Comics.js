@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import ComicList from './containers/ComicList'
-import { fetchComicsIfNeeded } from '../../../actions'
+import ComicList from '../containers/ComicList'
+import { fetchComicsIfNeeded } from '../../actions'
 import { connect } from 'react-redux'
 
 class Comics extends Component {
@@ -11,8 +11,8 @@ class Comics extends Component {
   render() {
     return (
       <div className="container">
-        <h2 style={{ textAlign: 'center', color: 'red', fontSize: '48px', margin: 0 }}>API Marvel</h2>
-        <ComicList />
+        <h2 style={{ lineHeight: 1, textAlign: 'center', color: 'red', fontSize: '48px', marginBottom: '1rem' }}>API Marvel</h2>
+        <ComicList/>
       </div>
     )
   }

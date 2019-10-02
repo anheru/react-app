@@ -18,7 +18,7 @@ const ComicList = ({ comics }) => {
   return (
     <List>
       {comics.map((c) => (
-        <ListItem key={c.id}>
+        <ListItem key={c.id} className="w-full sm:w-1/3 lg:w-1/4 px-3">
           <Comic {...c} />
         </ListItem>
       ))}

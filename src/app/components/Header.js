@@ -11,17 +11,14 @@ const List = styled.ul`
   padding: 15px 0;
 `
 
-const ListItem = styled.li`
-  padding: 0 2rem;
-`
-
 export default function Header() {
   return (
     <header className="App-header">
       <nav>
         <List>
-          <ListItem><Link to="/">Home</Link></ListItem>
-          <ListItem><Link to="/comics">Comics</Link></ListItem>
+          <li className="px-3 md:px-5"><Link to="/">Home</Link></li>
+          <li className="px-3 md:px-5"><Link to="/comics">Comics</Link></li>
+          <li className="px-3 md:px-5"><Link to="/films">Star Wars</Link></li>
         </List>
       </nav>
     </header>

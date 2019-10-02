@@ -1,4 +1,4 @@
-import API from '../utils/API'
+import API from '../utils/apiMarvel'
 
 export const REQUEST_COMICS = 'comics/REQUEST_COMICS'
 export const RECEIVE_COMICS = 'comics/RECEIVE_COMICS'

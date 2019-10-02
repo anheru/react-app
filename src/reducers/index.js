@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import counter from './counter'
+import films from './films'
 import comics from './comics'
 
 export default combineReducers({
-  counter,
+  films,
   comics
 })

@@ -1,10 +1,10 @@
-import React, { Component} from 'react'
+import React, { Component } from 'react'
 
 class Comic extends Component {
-  render () {
+  render() {
     return (
       <>
-        <h2>ID: {this.props.match.params.id}</h2>
+        <h2 className="text-5xl">ID: {this.props.match.params.id}</h2>
       </>
     )
   }

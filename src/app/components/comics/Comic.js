@@ -5,14 +5,13 @@ import './Comic.css'
 
 const ComicItem = ({ id, thumbnail, title }) => {
   return (
-    <Link to={`/comics/${id}`} className="comic">
+    <Link to={`/comics/${id}`} className="comic hover:shadow-md rounded-lg overflow-hidden">
       <img
         className="comic__image"
         src={thumbnail}
         title={title}
         alt={title}
       />
-      <p className="comic__title">{title}</p>
     </Link>
   )
 }

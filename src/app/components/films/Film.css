@@ -1,0 +1,21 @@
+.film {
+  display: block;
+}
+
+.film {
+  text-decoration: none;
+}
+
+.film:hover {
+  text-decoration: underline
+}
+
+.film__image {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.film__title {
+  font-size: 14px;
+}
